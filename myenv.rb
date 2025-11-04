@@ -5,20 +5,20 @@
 class Myenv < Formula
   desc ""
   homepage ""
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/takashiraki/myenv/releases/download/v0.3.0/myenv_Darwin_x86_64.tar.gz"
-      sha256 "ede8ab3f1ba0f91df6e01f38b7cf8343de678d1787a221de7081cfdf012e8571"
+      url "https://github.com/takashiraki/myenv/releases/download/v0.3.1/myenv_Darwin_x86_64.tar.gz"
+      sha256 "2cbfa0ff6ffde469ba6526042c1506e006319911e94ddd548d83e108fdf0fbe1"
 
       def install
         bin.install "myenv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/takashiraki/myenv/releases/download/v0.3.0/myenv_Darwin_arm64.tar.gz"
-      sha256 "1303bf736f16d55b28ddb7c09569667542114fd424c4a79d58ece0fc8b6e977f"
+      url "https://github.com/takashiraki/myenv/releases/download/v0.3.1/myenv_Darwin_arm64.tar.gz"
+      sha256 "32505b771742ed661047df276177bdbecb5549498570fdbc70371dd3d9f8595d"
 
       def install
         bin.install "myenv"
@@ -28,15 +28,15 @@ class Myenv < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/takashiraki/myenv/releases/download/v0.3.0/myenv_Linux_x86_64.tar.gz"
-      sha256 "86421f86aebc7321d3248b0fc96e28e2c59372e81fbdf0433e814d9471152020"
+      url "https://github.com/takashiraki/myenv/releases/download/v0.3.1/myenv_Linux_x86_64.tar.gz"
+      sha256 "f8b95cc050c2304ad199394c147d7c356dfae0f673fd16b77e760efc4f1aa6b0"
       def install
         bin.install "myenv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/takashiraki/myenv/releases/download/v0.3.0/myenv_Linux_arm64.tar.gz"
-      sha256 "195d665b2cebb0b610d310708dfd9d0996a9d12ad717114ba709c74ca6214ad3"
+      url "https://github.com/takashiraki/myenv/releases/download/v0.3.1/myenv_Linux_arm64.tar.gz"
+      sha256 "963be26dca90a27103b2f3fc1ee48eef77c9c346f3a0cefc14c988e0e94cab6b"
       def install
         bin.install "myenv"
       end
